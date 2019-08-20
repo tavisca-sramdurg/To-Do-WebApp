@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>User</title>
+    <title>Home</title>
+    <link href="skeletonStyle.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 </head>
+
+<style>
+    form {
+        border: 3px solid #f1f1f1;
+        width: 30%;
+        margin-left: 30%;
+        font-size: 50%;
+      }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=radio] {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .user img{
+        width: 110px;
+        height: 90px;
+    }
+
+  label{
+  }
+
+  a{
+    font-size: 70%
+  }
+</style>
 <body>
-   <h1>User page under maintainence</h1> 
+
+<div class="grid-container">
+
+  	<div class="header" id="colorclass">
+
+  		<div class="logo">
+  			<img src="logo.png" alt="Logo">
+  		</div>
+  		<h2>TaskIt<h2>
+	</div>
+  <div class="menu">
+    <ul>
+        <li style="list-style-type: none;"><button onclick="window.location.href = 'ToDo.html';" class="navbuttons">To-Do</button></li>      
+        <li style="list-style-type: none;"><button onclick="window.location.href = 'User.html';" class="navbuttons">User</button></li>      
+        <li style="list-style-type: none;"><button onclick="window.location.href = 'Login.html';" class="navbuttons">Login</button></li> 
+
+    </ul>
+
+  </div>
+  <div class="main">
+        <form action="/action_page.php" name="userProfile">
+                    <h2>My Profile</h2>
+                    <div class="user">
+                        <img src="user.png">
+                    </div>
+                    <br>
+                    <label for="firstName"><b>First name</b></label>
+                    <input type="text" name="firstName" value="Shravan"><br><br>
+                    
+                    <label for="usermob"><b>Mobile no</b></label>
+                    <input type="number" name="usermob" value="7777788888"><br><br>
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" name="email" value="shravan@gmail.com"><br><br>
+                    <label for="firstName"><b>Gender</b></label>
+                    <input type="radio" name = "gender" value="male">Male
+                    <input type="radio" name = "gender" value="female">Female<br><br>
+                    <button value="update" name="update">Update</button> 
+          </form>
+  </div>  
+  
+  <div class="footer">
+      
+      <a href='home.html' class="active">Home</a>
+      <a href="AboutUs.html">AboutUs</a>
+      <a href="ContactUs.html">ContactUs</a>
+  
+  </div>  
+</div>
+
 </body>
 </html>

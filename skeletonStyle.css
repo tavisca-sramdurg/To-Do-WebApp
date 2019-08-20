@@ -1,0 +1,95 @@
+
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.header { 
+	grid-area: header; 
+}
+#colorClass{
+	background-color: rgb(110, 20, 38);
+}
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #4CAF50;
+  padding: 10px;
+}
+
+.menu{
+  
+  height: 474px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+.main{
+  height: 390px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.logo img{
+	float:left;
+	width: 180px;
+	height: 120px;
+}
+
+.navbuttons {
+  background-color: rgb(99, 116, 192);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+  .navbar {
+    overflow: hidden;
+    padding: 10px;
+    background-color: #333;
+    /* position: fixed; */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #f1f1f1;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }

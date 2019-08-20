@@ -1,43 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>AboutUs</title>
-<link href="HomeStyle.css" rel="stylesheet" type="text/css">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AboutUs</title>
+    <link href="skeletonStyle.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
+    <style>
+      p{
+        width: 70%; 
+        margin-left: 15%;
+        font-size: 70%
+      }
+      a{
+        font-size: 70%
+      }
+    </style>
 </head>
 <body>
 
-<header>
-  <img src="logo.png" alt="Logo" >
-  <h2>MyWebsite</h2>
+<div class="grid-container">
 
-</header>
+  	<div class="header" id="colorclass">
 
-<section>
-  <nav>
+  		<div class="logo">
+  			<img src="logo.png" alt="Logo">
+  		</div>
+  		<h2>TaskIt<h2>
+	</div>
+  <div class="menu">
     <ul>
-        <li><button onclick="window.location.href = 'ToDo.html';">To-Do</button></li>      
-        <li><button onclick="window.location.href = 'User.html';">User</button></li>      
-        <li><button onclick="window.location.href = 'Login.html';">Login</button></li> 
+        <li style="list-style-type: none;"><button onclick="window.location.href = 'ToDo.html';" class="navbuttons">To-Do</button></li>      
+        <li style="list-style-type: none;"><button onclick="window.location.href = 'User.html';" class="navbuttons">User</button></li>      
+        <li style="list-style-type: none;"><button onclick="window.location.href = 'Login.html';" class="navbuttons">Login</button></li> 
 
     </ul>
-  </nav>
-  
-  <article>
-    <h1>AboutUs</h1>
-    <p>Ipsum</p>
-  </article>
-</section>
 
-<footer>
-    <div class="navbar">
-        <a href='home.html' class="active">Home</a>
-        <a href="AboutUs.html">AboutUs</a>
-        <a href="ContactUs.html">ContactUs</a>
-    </div>
-</footer>
+  </div>
+  <div class="main">
+    <h3>About Us</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+      sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>  
+  
+  <div class="footer">
+      
+      <a href='home.html' class="active">Home</a>
+      <a href="AboutUs.html">AboutUs</a>
+      <a href="ContactUs.html">ContactUs</a>
+  
+  </div>  
+</div>
 
 </body>
 </html>
