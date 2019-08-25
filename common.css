@@ -1,0 +1,230 @@
+/* * {
+  box-sizing: border-box;
+  border: solid red 5px;
+} */
+
+body {
+  font-family: Arial, Helvetica, sans-serif, monospace;
+  background-color: white;
+}
+
+/* Style the header */
+header {
+  background-color:#24252b;
+  padding: 8px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  height: 76px;
+  border-style: outset;
+  border-top-width:0px;
+  border-left-width:4px;
+  border-right-width:0px;
+  border-bottom-width:0px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+menu {
+  float: left;
+  width: 13%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: #24252b;
+  padding: 20px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  border-style: outset;
+  border-top-width:4px;
+  border-left-width:4px;
+  border-right-width:4px;
+  border-bottom-width:4px;
+}
+
+/* Style the list inside the menu */
+menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main {
+  margin-top: 0%;
+  float: left;
+  padding: 20px;
+  width: 79.79%;
+  background-color: whitesmoke;
+  height: 403px; /* only for demonstration, should be removed */
+  margin-bottom: 0%;
+  border-style: outset;
+  border-top-width:0px;
+  border-left-width:4px;
+  border-right-width:4px;
+  border-bottom-width:4px;
+  color: rgba(0,0,0,.84);
+
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;  
+}
+
+/* Style the footer */
+footer {
+  background-color: #24252b;
+  padding: 10px;
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  
+  border-style: inset;
+  border-top-width:0px;
+  border-left-width:0px;
+  border-right-width:0px;
+  border-bottom-width:0px;
+  height: 70px;
+  width: 1460px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  menu, main {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#logo{
+  width: 80px;
+  height: 75px;
+  float : left;
+}
+
+#appName{
+  margin-top: 0%;
+  margin-right: 80%;
+  color: whitesmoke;
+  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+menuButtons{
+  text-align-last : center;
+}
+
+#menuButtonsId{
+  margin-top: 10%;
+  margin-left: -10%; 
+  width: 121%;
+  padding: 15px;
+  font-size: 20px;
+  color: whitesmoke;
+  background-color: #24252b;
+  border-width: 1px;
+}
+
+#footerLinks{
+  color: antiquewhite;
+}
+
+#toDoListId{
+  text-align: center;
+}
+
+#tasksTitleId{
+  font-size: 200%;
+}
+
+#tasksFormId{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#toDoTableId{
+  color: black;
+  text-align: center; 
+  margin-left: 37%;
+  font-size: 150%;
+}
+
+#addButtonId{ 
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#deleteButton{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#editButton{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+td{
+  text-align: left;
+}
+
+#userProfileDivId{
+  color: black;
+  text-align: center; 
+  /* margin-left: 37%; */
+  font-size: 150%;
+}
+
+#login{
+  color: black;
+  text-align: center; 
+  margin-left: 20%;
+  font-size: 150%;
+
+  width: 50%;
+  /* padding: 12px 20px; */
+  /* margin: 8px 0; */
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#submit{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#loginInputs{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
